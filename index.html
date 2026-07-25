@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="GonzHome is a collection of free tools, directories, and resources for the print-and-play board gaming community."
+    >
+    <meta name="theme-color" content="#f4efe5">
+    <meta property="og:title" content="GonzHome — Print. Cut. Play.">
+    <meta
+      property="og:description"
+      content="Free tools and useful places for the print-and-play board gaming community."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gonzhome.us">
+    <title>GonzHome — Print. Cut. Play.</title>
+    <link rel="canonical" href="https://gonzhome.us">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        const savedTheme = localStorage.getItem("gonzhome-theme");
+        const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = savedTheme || (preferredDark ? "dark" : "light");
+      } catch (_) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#sites">Skip to the sites</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="GonzHome, home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>GonzHome</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Page navigation">
+        <a href="#discover">Discover</a>
+        <a href="#create">Create</a>
+        <a href="#community">Community</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.2 15.4A8.2 8.2 0 0 1 8.6 3.8 8.2 8.2 0 1 0 20.2 15.4Z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> GonzHome by Martin Gonzalvez</p>
+          <h1>Sites and tools for the print-and-play community.</h1>
+          <p class="hero-intro">
+            I maintain these directories, utilities, and community spaces to make
+            print-and-play games easier to find, create, and share.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#sites">
+              Browse the directory
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h12M11 5l5 5-5 5"></path>
+              </svg>
+            </a>
+            <span class="bookmark-note">One page to bookmark. Everything else is one click away.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg class="craft-scene" viewBox="0 0 560 470">
+            <defs>
+              <pattern id="mat-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0V20" class="mat-grid-line"></path>
+                <path d="M10 0V20M0 10H20" class="mat-grid-half"></path>
+              </pattern>
+              <filter id="craft-shadow" x="-20%" y="-20%" width="150%" height="150%">
+                <feDropShadow dx="7" dy="8" stdDeviation="0" class="svg-shadow"></feDropShadow>
+              </filter>
+            </defs>
+
+            <g class="trimmer" transform="rotate(4 284 247)">
+              <rect x="102" y="73" width="367" height="336" rx="10" class="trimmer-base"></rect>
+              <rect x="119" y="91" width="301" height="299" rx="3" class="trimmer-bed"></rect>
+              <path d="M145 91v299M195 91v299M245 91v299M295 91v299M345 91v299M395 91v299M119 141h301M119 191h301M119 241h301M119 291h301M119 341h301" class="trimmer-guides"></path>
+              <rect x="430" y="57" width="28" height="358" rx="13" class="trimmer-rail"></rect>
+              <rect x="422" y="118" width="44" height="74" rx="10" class="trimmer-handle"></rect>
+              <path d="M436 205v169" class="trimmer-cut"></path>
+            </g>
+
+            <g class="mat" filter="url(#craft-shadow)" transform="rotate(-3 279 224)">
+              <rect x="110" y="50" width="348" height="348" rx="8" class="mat-surface"></rect>
+              <rect x="126" y="66" width="316" height="316" rx="3" fill="url(#mat-grid)" class="mat-grid"></rect>
+              <path d="M126 81h9M126 101h5M126 121h9M126 141h5M126 161h9M126 181h5M126 201h9M126 221h5M126 241h9M126 261h5M126 281h9M126 301h5M126 321h9M126 341h5M126 361h9" class="mat-ticks"></path>
+            </g>
+
+            <g class="print-sheet" filter="url(#craft-shadow)" transform="rotate(3 280 221)">
+              <rect x="183" y="80" width="194" height="282" rx="3" class="sheet-paper"></rect>
+              <path d="M173 96h14M183 70v14M373 70v14M373 96h14M173 346h14M183 358v14M373 358v14M373 346h14" class="crop-marks"></path>
+              <path d="M280 91v260M194 171h172M194 261h172" class="sheet-cut-lines"></path>
+
+              <g class="printed-card card-a">
+                <rect x="196" y="94" width="78" height="71" rx="3"></rect>
+                <circle cx="235" cy="118" r="14"></circle>
+                <path d="M211 146h49M220 154h31"></path>
+              </g>
+              <g class="printed-card card-b">
+                <rect x="286" y="94" width="78" height="71" rx="3"></rect>
+                <path d="m325 104 7 13 14 2-10 10 2 15-13-7-13 7 2-15-10-10 14-2Z"></path>
+                <path d="M299 154h52"></path>
+              </g>
+              <g class="printed-card card-c">
+                <rect x="196" y="177" width="78" height="78" rx="3"></rect>
+                <path d="M210 233c9-26 20-40 49-45-4 30-18 43-49 45Z"></path>
+                <path d="m215 228 38-34"></path>
+              </g>
+              <g class="printed-card card-d">
+                <rect x="286" y="177" width="78" height="78" rx="3"></rect>
+                <circle cx="325" cy="211" r="20"></circle>
+                <path d="M325 192v38M306 211h38"></path>
+                <path d="M302 244h46"></path>
+              </g>
+              <g class="printed-card card-e">
+                <rect x="196" y="267" width="78" height="82" rx="3"></rect>
+                <path d="m235 280 25 20-10 34h-30l-10-34Z"></path>
+                <circle cx="235" cy="305" r="7"></circle>
+              </g>
+              <g class="printed-card card-f">
+                <rect x="286" y="267" width="78" height="82" rx="3"></rect>
+                <path d="M300 283h50v35h-50z"></path>
+                <path d="m302 313 13-15 10 10 9-8 14 13M301 335h48"></path>
+              </g>
+            </g>
+
+            <g class="metal-ruler" filter="url(#craft-shadow)" transform="rotate(-42 135 354)">
+              <rect x="8" y="333" width="270" height="42" rx="4"></rect>
+              <path d="M29 333v19M49 333v11M69 333v19M89 333v11M109 333v19M129 333v11M149 333v19M169 333v11M189 333v19M209 333v11M229 333v19M249 333v11"></path>
+              <circle cx="260" cy="354" r="6"></circle>
+            </g>
+
+            <g class="craft-knife" filter="url(#craft-shadow)" transform="rotate(31 450 220)">
+              <path d="m434 45 21-1 4 72-25 1Z" class="knife-blade"></path>
+              <path d="m438 45 7-33 9 32Z" class="knife-tip"></path>
+              <rect x="431" y="108" width="31" height="190" rx="12" class="knife-handle"></rect>
+              <path d="M437 137h19M436 156h21M437 175h19M436 194h21M437 213h19M436 232h21M437 251h19" class="knife-grip"></path>
+              <rect x="435" y="278" width="23" height="32" rx="8" class="knife-cap"></rect>
+            </g>
+
+            <g class="scissors" filter="url(#craft-shadow)" transform="rotate(-5 461 351)">
+              <path d="M461 351 382 229" class="scissor-blade-outline"></path>
+              <path d="M461 351 382 229" class="scissor-blade-fill"></path>
+              <path d="M461 351 535 226" class="scissor-blade-outline"></path>
+              <path d="M461 351 535 226" class="scissor-blade-fill"></path>
+              <path d="M456 359 433 378M467 359l25 19" class="scissor-neck-outline"></path>
+              <path d="M456 359 433 378M467 359l25 19" class="scissor-neck-fill"></path>
+              <circle cx="420" cy="395" r="30" class="scissor-ring"></circle>
+              <circle cx="504" cy="395" r="30" class="scissor-ring"></circle>
+              <circle cx="420" cy="395" r="14" class="scissor-hole"></circle>
+              <circle cx="504" cy="395" r="14" class="scissor-hole"></circle>
+              <circle cx="461" cy="352" r="9" class="scissor-pivot"></circle>
+            </g>
+
+            <g class="paper-scraps">
+              <path d="m63 108 43 14-34 31Z"></path>
+              <path d="m482 71 37 20-32 22Z"></path>
+              <path d="m56 423 38-30 10 44Z"></path>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="directory" id="sites">
+        <div class="section-heading" id="discover">
+          <div>
+            <p class="section-number">Games &amp; resources</p>
+            <h2>Find something worth printing.</h2>
+          </div>
+          <p>Directories and regularly updated places for discovering games, projects, and useful PnP resources.</p>
+        </div>
+
+        <div class="site-grid discovery-grid">
+          <a class="site-card card-finder card-large" href="https://pnpfinder.com" target="_blank" rel="noopener">
+            <div class="card-topline">
+              <span class="site-tag">Game directory</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="site-visual finder-visual" aria-hidden="true">
+              <img src="https://pnpfinder.com/img/favicon/favicon.png" alt="" loading="lazy">
+            </div>
+            <div class="card-copy">
+              <h3>PnP<span>Finder</span></h3>
+              <p>Search and discover free and paid print-and-play games from around the web.</p>
+            </div>
+          </a>
+
+          <a class="site-card card-daily" href="https://pnpdaily.gonzhome.us" target="_blank" rel="noopener">
+            <div class="card-topline">
+              <span class="site-tag">Daily inspiration</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="site-visual daily-visual" aria-hidden="true">
+              <img src="https://pnpdaily.gonzhome.us/favicon.svg" alt="" loading="lazy">
+            </div>
+            <div class="card-copy">
+              <h3>PnP Daily</h3>
+              <p>A fresh rotation of games, builds, tips, tools, and community highlights.</p>
+            </div>
+          </a>
+
+          <a class="site-card card-launchpad" href="https://launchpad.gonzhome.us" target="_blank" rel="noopener">
+            <div class="card-topline">
+              <span class="site-tag">New &amp; upcoming</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="site-visual launch-visual" aria-hidden="true">
+              <img src="https://launchpad.gonzhome.us/assets/logo.svg" alt="" loading="lazy">
+            </div>
+            <div class="card-copy">
+              <h3>PnP Launchpad</h3>
+              <p>Track PnP crowdfunding campaigns, previews, promotions, and late pledges.</p>
+            </div>
+          </a>
+
+          <a class="site-card card-tools" href="https://pnptools.gonzhome.us" target="_blank" rel="noopener">
+            <div class="card-topline">
+              <span class="site-tag">Resource library</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="site-visual tools-visual" aria-hidden="true">
+              <img src="https://pnptools.gonzhome.us/images/favicon_new.png" alt="" loading="lazy">
+            </div>
+            <div class="card-copy">
+              <h3>PnPTools</h3>
+              <p>Browse a curated directory of PnP resources, groups, stores, and utilities.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="section-heading create-heading" id="create">
+          <div>
+            <p class="section-number">Making tools</p>
+            <h2>Get the files onto the table.</h2>
+          </div>
+          <p>Small, focused browser tools I built to solve common problems when designing and preparing PnP files.</p>
+        </div>
+
+        <div class="site-grid creation-grid">
+          <a class="site-card utility-card utility-board" href="https://boardsplitter.gonzhome.us" target="_blank" rel="noopener">
+            <div class="utility-icon icon-board" aria-hidden="true">
+              <span class="boardsplitter-mark">BS</span>
+            </div>
+            <div class="utility-copy">
+              <p class="site-tag">Prepare</p>
+              <h3>BoardSplitter</h3>
+              <p>Divide a large game board into neatly tiled, print-ready pages.</p>
+            </div>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="site-card utility-card utility-prototype" href="https://prototyper.gonzhome.us" target="_blank" rel="noopener">
+            <div class="utility-icon icon-prototype" aria-hidden="true">
+              <img src="assets/prototyper-icon.svg" alt="" loading="lazy">
+            </div>
+            <div class="utility-copy">
+              <p class="site-tag">Design</p>
+              <h3>Card Prototyper</h3>
+              <p>Build and export tabletop card mockups with a visual editor.</p>
+            </div>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="site-card utility-card utility-extract" href="https://extractor.gonzhome.us" target="_blank" rel="noopener">
+            <div class="utility-icon icon-extract" aria-hidden="true">
+              <img src="https://extractor.gonzhome.us/favicon.svg" alt="" loading="lazy">
+            </div>
+            <div class="utility-copy">
+              <p class="site-tag">Separate</p>
+              <h3>Card Extractor</h3>
+              <p>Pull individual card images from printable PDF layouts.</p>
+            </div>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="site-card utility-card utility-format" href="https://formatter.gonzhome.us" target="_blank" rel="noopener">
+            <div class="utility-icon icon-format" aria-hidden="true">
+              <img src="https://formatter.gonzhome.us/favicon.svg" alt="" loading="lazy">
+            </div>
+            <div class="utility-copy">
+              <p class="site-tag">Arrange</p>
+              <h3>Card Formatter</h3>
+              <p>Turn card images into print-ready PDFs with cut guides and duplex layouts.</p>
+            </div>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="section-heading community-heading" id="community">
+          <div>
+            <p class="section-number">Community spaces</p>
+            <h2>Places where I help out.</h2>
+          </div>
+          <p>Public parts of the PnP community that I founded, moderate, or help steward.</p>
+        </div>
+
+        <div class="community-grid">
+          <a class="community-tile community-facebook" href="https://facebook.com/groups/pnphideaway" target="_blank" rel="noopener">
+            <div class="community-topline">
+              <span class="site-tag">Facebook group</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="community-icon facebook-icon" aria-hidden="true">f</div>
+            <div class="community-tile-copy">
+              <h3>Print &amp; Play Hideaway</h3>
+              <p>A welcoming home for sharing builds, finding games, and talking all things PnP.</p>
+              <div class="community-stats">
+                <span><strong>16.7K+</strong> members</span>
+                <span class="role-chip">Founder &amp; admin since 2018</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="community-tile community-reddit" href="https://reddit.com/r/printandplay" target="_blank" rel="noopener">
+            <div class="community-topline">
+              <span class="site-tag">Reddit community</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="community-icon reddit-icon" aria-hidden="true">
+              <span class="reddit-eye eye-left"></span>
+              <span class="reddit-eye eye-right"></span>
+              <span class="reddit-smile"></span>
+              <span class="reddit-antenna"></span>
+            </div>
+            <div class="community-tile-copy">
+              <h3>r/printandplay</h3>
+              <p>Questions, projects, recommendations, and practical advice from PnP makers.</p>
+              <div class="community-stats">
+                <span><strong>17.3K+</strong> members</span>
+                <span class="role-chip">Co-moderator</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="community-tile community-bgg"
+            href="https://boardgamegeek.com/thread/482943"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="community-topline">
+              <span class="site-tag">BoardGameGeek</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="community-icon bgg-icon" aria-hidden="true">
+              <span class="bgg-page">
+                <span></span><span></span><span></span>
+              </span>
+              <span class="bgg-meeple"></span>
+            </div>
+            <div class="community-tile-copy">
+              <h3>Monthly PnP Crafting Geeklist</h3>
+              <p>See what the community is making and share your own builds every month.</p>
+              <div class="community-stats">
+                <span><strong>Monthly</strong> since 2010</span>
+                <span class="role-chip">Steward since Aug 2020</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="community-tile community-youtube" href="https://www.youtube.com/@PnPHideaway" target="_blank" rel="noopener">
+            <div class="community-topline">
+              <span class="site-tag">YouTube channel</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="community-icon youtube-icon" aria-hidden="true">
+              <span class="play-button"></span>
+              <span class="video-line video-line-one"></span>
+              <span class="video-line video-line-two"></span>
+            </div>
+            <div class="community-tile-copy">
+              <h3>PnP Hideaway on YouTube</h3>
+              <p>Build videos, game spotlights, tutorials, and other print-and-play inspiration.</p>
+              <div class="community-stats">
+                <span><strong>150+</strong> PnP videos</span>
+                <span class="role-chip">Watch &amp; subscribe</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="personal-note">
+        <a
+          class="personal-avatar"
+          href="https://boardgamegeek.com/profile/DrHenryArmitage"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit Martin Gonzalvez’s BoardGameGeek profile"
+        >
+          <img
+            src="https://cf.geekdo-images.com/avatars/Li91vKT6owLG-cwx16PVGRtT8_A=/fit-in/70x70/filters:no_upscale():strip_icc():format(png)/avatar_id126113.png"
+            alt="Martin Gonzalvez’s BoardGameGeek avatar"
+            width="70"
+            height="70"
+            loading="lazy"
+          >
+        </a>
+        <div class="personal-note-copy">
+          <p class="section-number">A note from Martin</p>
+          <p>
+            I make and maintain these sites because the print-and-play community
+            has given me so much joy over the years, and I want to give back in my
+            own small ways. If something here helps you, please share it with other
+            PnPers and help keep our beloved PnP hobby growing.
+          </p>
+          <a
+            class="bgg-profile-link"
+            href="https://boardgamegeek.com/profile/DrHenryArmitage"
+            target="_blank"
+            rel="noopener"
+          >@DrHenryArmitage on BoardGameGeek <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="support-note" aria-labelledby="support-note-title">
+        <span class="support-icon" aria-hidden="true">☕</span>
+        <div>
+          <p class="section-number">Totally optional</p>
+          <p id="support-note-title">
+            If you feel like showing me a little love for the things I make and
+            do, why not
+            <a href="https://ko-fi.com/marting" target="_blank" rel="noopener">
+              buy me a coffee <span aria-hidden="true">↗</span>
+            </a>?
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="/">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>GonzHome</span>
+      </a>
+      <p>Useful things for the print-and-play community.</p>
+      <p class="copyright">© <span id="year">2026</span> GonzHome</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Card Prototyper</title>
+  <desc id="desc">An editable prototype card with image and text areas.</desc>
+  <defs>
+    <linearGradient id="background" x1="5" y1="5" x2="59" y2="59" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f6d6b"/>
+      <stop offset="1" stop-color="#db4f27"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="url(#background)"/>
+
+  <g transform="rotate(-5 32 32)">
+    <rect x="15" y="8" width="34" height="49" rx="5" fill="#fff4e6" stroke="#263a38" stroke-width="2"/>
+    <rect x="20" y="14" width="24" height="8" rx="2" fill="#db4f27"/>
+    <rect x="20" y="26" width="24" height="17" rx="2" fill="#86a7c9" stroke="#2f6d6b" stroke-width="1.5"/>
+    <circle cx="32" cy="34.5" r="4.5" fill="#f1c84b" stroke="#263a38" stroke-width="1.2"/>
+    <path d="M20 48h24M23 52h18" fill="none" stroke="#2f6d6b" stroke-width="2" stroke-linecap="round"/>
+
+    <g fill="#f1c84b" stroke="#263a38" stroke-width="1.2">
+      <circle cx="20" cy="26" r="2.2"/>
+      <circle cx="44" cy="26" r="2.2"/>
+      <circle cx="20" cy="43" r="2.2"/>
+      <circle cx="44" cy="43" r="2.2"/>
+    </g>
+  </g>
+</svg>
