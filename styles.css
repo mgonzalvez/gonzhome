@@ -2405,6 +2405,10 @@ body {
   background: color-mix(in srgb, #a18eaf 19%, var(--card));
 }
 
+.utility-token {
+  background: color-mix(in srgb, #d47a5e 19%, var(--card));
+}
+
 .utility-icon {
   display: grid;
   grid-area: visual;
@@ -2421,6 +2425,12 @@ body {
   width: 66px;
   height: 66px;
   object-fit: contain;
+}
+
+.utility-token .utility-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .utility-copy {

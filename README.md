@@ -29,6 +29,8 @@ JavaScript for deployment on GitHub Pages.
   images from printable PDFs
 - [Card Formatter](https://formatter.gonzhome.us) — creates print-ready card PDFs
   with cut guides and duplex layouts
+- [TokenMaker](https://tokenmaker.gonzhome.us) — designs custom game tokens and
+  arranges them on print-ready sheets
 
 ### Community spaces
 
@@ -118,7 +120,8 @@ gonzhome/
 ├── app.js                     # Theme toggle and current footer year
 ├── favicon.svg                # GonzHome browser icon
 ├── assets/
-│   └── prototyper-icon.svg    # Custom Card Prototyper directory icon
+│   ├── prototyper-icon.svg    # Custom Card Prototyper directory icon
+│   └── tokenmaker-tool.webp   # TokenMaker directory illustration
 ├── CNAME                      # GitHub Pages custom domain
 ├── .nojekyll                  # Disables Jekyll processing
 └── README.md
@@ -176,8 +179,8 @@ Current external image sources include:
 - Card Formatter favicon
 - Martin's BoardGameGeek avatar
 
-BoardSplitter uses a local CSS monogram, and Card Prototyper uses the local SVG
-in `assets/`.
+BoardSplitter uses a local CSS monogram. Card Prototyper and TokenMaker use
+local artwork in `assets/`.
 
 ## Validation checklist
 
