@@ -2514,50 +2514,52 @@ body {
   background: color-mix(in srgb, var(--card) 34%, transparent);
 }
 
-.guest-host-tool {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-  margin-top: 22px;
-  padding: 19px 22px;
-  border: 1px dashed color-mix(in srgb, var(--ink) 22%, transparent);
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--card) 38%, transparent);
-  color: var(--muted);
-}
-
-.guest-host-tool p {
-  margin: 0;
-}
-
-.guest-host-tool .section-number {
-  margin-bottom: 6px;
-  font-size: 0.68rem;
-}
-
-.guest-host-tool div > p:last-child {
+.guest-host-tile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 22px;
+  width: min(100%, 460px);
+  min-height: 142px;
+  margin: 20px auto 0;
+  padding: 20px 22px;
+  border: 1px solid color-mix(in srgb, var(--ink) 13%, transparent);
+  border-radius: 16px;
+  background: color-mix(in srgb, #e4b84a 9%, var(--card));
   color: var(--ink);
-  font-size: 0.91rem;
-  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
-.guest-host-tool > p {
-  max-width: 330px;
-  font-size: 0.8rem;
+.guest-host-tile:hover,
+.guest-host-tile:focus-visible {
+  border-color: color-mix(in srgb, var(--ink) 35%, transparent);
+  box-shadow: 0 10px 25px rgba(32, 47, 38, 0.07);
+  transform: translateY(-2px);
+}
+
+.guest-host-tile .site-tag {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 0.64rem;
+}
+
+.guest-host-tile h3 {
+  margin: 14px 0 5px;
+  font-size: 1.05rem;
+  letter-spacing: -0.025em;
+}
+
+.guest-host-tile p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
   line-height: 1.45;
-  text-align: right;
 }
 
-.guest-host-tool a {
-  text-decoration-color: color-mix(in srgb, var(--ink) 38%, transparent);
-  text-underline-offset: 3px;
-}
-
-.guest-host-tool a:hover,
-.guest-host-tool a:focus-visible {
-  color: var(--coral);
-  text-decoration-color: currentColor;
+.guest-host-tile .external-arrow {
+  align-self: start;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 @media (max-width: 900px) {
@@ -2653,14 +2655,8 @@ body {
     margin-top: 0;
   }
 
-  .guest-host-tool {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .guest-host-tool > p {
-    max-width: none;
-    text-align: left;
+  .guest-host-tile {
+    width: 100%;
+    min-height: 132px;
   }
 }
