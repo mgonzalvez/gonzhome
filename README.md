@@ -41,8 +41,10 @@ JavaScript for deployment on GitHub Pages.
 - [PnP Hideaway on YouTube](https://www.youtube.com/@PnPHideaway) — more than
   150 PnP-related videos
 
-The private Geeklist Generator is intentionally not linked. It is a specialized
-tool for monthly guest hosts rather than a public community destination.
+The [Geeklist Generator](https://geeklist.gonzhome.us) is linked as a subdued
+guest-host utility beneath the main community destinations. It is a specialized
+tool for monthly PnP Crafting Geeklist hosts rather than a public community
+destination.
 
 ### Optional support
 

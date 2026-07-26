@@ -2514,6 +2514,52 @@ body {
   background: color-mix(in srgb, var(--card) 34%, transparent);
 }
 
+.guest-host-tool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 22px;
+  padding: 19px 22px;
+  border: 1px dashed color-mix(in srgb, var(--ink) 22%, transparent);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--card) 38%, transparent);
+  color: var(--muted);
+}
+
+.guest-host-tool p {
+  margin: 0;
+}
+
+.guest-host-tool .section-number {
+  margin-bottom: 6px;
+  font-size: 0.68rem;
+}
+
+.guest-host-tool div > p:last-child {
+  color: var(--ink);
+  font-size: 0.91rem;
+  font-weight: 600;
+}
+
+.guest-host-tool > p {
+  max-width: 330px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.guest-host-tool a {
+  text-decoration-color: color-mix(in srgb, var(--ink) 38%, transparent);
+  text-underline-offset: 3px;
+}
+
+.guest-host-tool a:hover,
+.guest-host-tool a:focus-visible {
+  color: var(--coral);
+  text-decoration-color: currentColor;
+}
+
 @media (max-width: 900px) {
   .discovery-grid > .site-card {
     grid-template-columns: 1fr;
@@ -2605,5 +2651,16 @@ body {
 
   .community-tile-copy {
     margin-top: 0;
+  }
+
+  .guest-host-tool {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .guest-host-tool > p {
+    max-width: none;
+    text-align: left;
   }
 }
