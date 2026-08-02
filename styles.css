@@ -2410,7 +2410,7 @@ body {
 }
 
 .utility-dice {
-  background: color-mix(in srgb, #6d88b8 20%, var(--card));
+  background: color-mix(in srgb, #6d88b8 36%, var(--card));
 }
 
 .utility-icon {
@@ -2444,6 +2444,30 @@ body {
 
 .utility-copy {
   grid-area: copy;
+}
+
+.utility-labels {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.utility-labels .site-tag {
+  margin: 0;
+}
+
+.new-badge {
+  padding: 5px 8px;
+  border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent);
+  border-radius: 999px;
+  background: #f1c84b;
+  color: var(--ink);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .utility-copy h3 {
