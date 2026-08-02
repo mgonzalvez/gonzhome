@@ -2409,6 +2409,10 @@ body {
   background: color-mix(in srgb, #d47a5e 19%, var(--card));
 }
 
+.utility-dice {
+  background: color-mix(in srgb, #6d88b8 20%, var(--card));
+}
+
 .utility-icon {
   display: grid;
   grid-area: visual;
@@ -2431,6 +2435,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.utility-dice .utility-icon img {
+  width: 72px;
+  height: 72px;
 }
 
 .utility-copy {

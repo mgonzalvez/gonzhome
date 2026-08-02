@@ -31,6 +31,8 @@ JavaScript for deployment on GitHub Pages.
   with cut guides and duplex layouts
 - [TokenMaker](https://tokenmaker.gonzhome.us) — designs custom game tokens and
   arranges them on print-ready sheets
+- [Dicemaker](https://dicemaker.gonzhome.us) — designs custom dice and arranges
+  them in templates on print-ready sheets
 
 ### Community spaces
 
@@ -121,6 +123,7 @@ gonzhome/
 ├── favicon.svg                # GonzHome browser icon
 ├── assets/
 │   ├── prototyper-icon.svg    # Custom Card Prototyper directory icon
+│   ├── dicemaker-tool.svg     # Custom Dicemaker directory icon
 │   └── tokenmaker-tool.webp   # TokenMaker directory illustration
 ├── CNAME                      # GitHub Pages custom domain
 ├── .nojekyll                  # Disables Jekyll processing
@@ -179,8 +182,8 @@ Current external image sources include:
 - Card Formatter favicon
 - Martin's BoardGameGeek avatar
 
-BoardSplitter uses a local CSS monogram. Card Prototyper and TokenMaker use
-local artwork in `assets/`.
+BoardSplitter uses a local CSS monogram. Card Prototyper, Dicemaker, and
+TokenMaker use local artwork in `assets/`.
 
 ## Validation checklist
 
